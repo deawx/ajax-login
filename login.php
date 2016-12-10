@@ -8,6 +8,10 @@
 
 </head>
 <body>
+<?php
+include "fb_login.php";
+?>
+
 <div class="container">
     <div class="signin-form">
 
@@ -38,10 +42,10 @@
                         <span class="glyphicon glyphicon-log-in"></span> &nbsp; Sign In
                     </button>
                 </div>
-                <div style="padding: 20px;"><a href="index.php">Sign Up</a></div>
+                <div style="padding: 20px;"><a style="float: left" href="index.php">Sign Up</a><a style="float: right" href="<?php echo $loginUrl;?>">Login with Facebook</a></div>
+                <div style="padding: 20px;"></div>
 
             </form>
-
         </div>
 
     </div>
